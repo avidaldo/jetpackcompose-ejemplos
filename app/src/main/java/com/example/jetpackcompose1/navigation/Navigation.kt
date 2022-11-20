@@ -5,6 +5,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcompose1.screens.*
+import com.example.jetpackcompose1.screens.basicos.Ej03Screen
+import com.example.jetpackcompose1.screens.basicos.Ej04Screen
+import com.example.jetpackcompose1.screens.basicos.Ej05Screen
+import com.example.jetpackcompose1.screens.teoria.Ej01Screen
+import com.example.jetpackcompose1.screens.teoria.Ej02Screen
 
 @Composable
 fun Navigation() {

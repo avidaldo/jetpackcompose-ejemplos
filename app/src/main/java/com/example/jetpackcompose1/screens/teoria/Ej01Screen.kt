@@ -1,4 +1,4 @@
-package com.example.jetpackcompose1.screens
+package com.example.jetpackcompose1.screens.teoria
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.padding

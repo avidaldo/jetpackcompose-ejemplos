@@ -1,4 +1,4 @@
-package com.example.jetpackcompose1.screens
+package com.example.jetpackcompose1.screens.teoria
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -40,7 +40,8 @@ los elementos internos de un determinado modo. La función Text no puede tener p
 parámetro que indique su posición dentro de la Box (ya que no tiene por qué estar dentro de una),
 pero sí pasa a tener ese atributo cuando está dentro de un "BoxScope".
 
-El argumento "content"
+El argumento "content" recibe una lambda, que se recomienda sacar de los paréntesis (dejar el cursor
+en content, pulsar Alt+Intro y el IDE nos recomienda extraerlo).
 
 
 (2)
