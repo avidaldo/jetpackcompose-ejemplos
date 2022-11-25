@@ -11,37 +11,39 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 val spacedByDefault = 5.dp
-const val boardSize = 6 // TODO: ¿formas de controlar que nunca se salga de pantalla?
+const val boardSize = 8
 
 
 @Composable
 fun Buscaminas() {
-    Column(Modifier.fillMaxSize(),
+    Column(
+        Modifier.fillMaxSize().padding(10.dp),
         verticalArrangement = Arrangement.spacedBy( // (1)
             space = spacedByDefault,
-            alignment = Alignment.CenterVertically),
-        horizontalAlignment = Alignment.CenterHorizontally) {
-        Tablero(boardSize)
-    }
-}
-
-@Composable
-fun Tablero(lado: Int = boardSize) {
-    repeat(lado) {
-        Row(horizontalArrangement = Arrangement.spacedBy(spacedByDefault)) {
-            repeat(lado) {
-                Button(onClick = { /*TODO*/ },
-                    Modifier.size(width = 50.dp, height = 50.dp)) {
-                    Icon(
-                        Icons.Default.Flag,
-                        contentDescription = null,
-                    )
+            alignment = Alignment.CenterVertically
+        ),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        repeat(boardSize) {
+            Row(horizontalArrangement = Arrangement.spacedBy(spacedByDefault)) {
+                repeat(boardSize) {
+                    Button(
+                        onClick = { /*TODO*/ },
+                        Modifier
+                            .weight(1f)
+                            .aspectRatio(1f)
+                    ) {
+                        Icon(
+                            Icons.Default.Flag,
+                            contentDescription = null,
+                        )
+                    }
                 }
             }
         }
     }
-
 }
+
 
 /*
  (1)
