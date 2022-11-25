@@ -35,7 +35,7 @@ fun MainScreen(navController: NavController) {
         Button(onClick = { navController.navigate(route = Screens.Ejemplo04.route) }) {
             Text(text = "Ejemplo 4")
         }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo05.route) }) {
+        Button(onClick = { navController.navigate(route = Screens.Buscaminas.route) }) {
             Text(text = "Ejemplo 5")
         }
         Button(onClick = { navController.navigate(route = Screens.ImagenesIconos.route) }) {
@@ -46,24 +46,7 @@ fun MainScreen(navController: NavController) {
         }
 
 
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
-        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
-        }
+
     }
 
 }

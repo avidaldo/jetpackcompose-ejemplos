@@ -24,7 +24,7 @@ fun Navigation() {
         composable(route = Screens.Ejemplo02.route) { Ej02Screen() }
         composable(route = Screens.Ejemplo03.route) { Ej03Screen() }
         composable(route = Screens.Ejemplo04.route) { Ej04Screen() }
-        composable(route = Screens.Ejemplo05.route) { Buscaminas() }
+        composable(route = Screens.Buscaminas.route) { Buscaminas() }
         composable(route = Screens.ImagenesIconos.route) { ImagenesIconos() }
         composable(route = Screens.Ejemplo06.route) { Ej06Screen() }
         composable(route = Screens.Ejemplo07.route) { Ej07Screen() }

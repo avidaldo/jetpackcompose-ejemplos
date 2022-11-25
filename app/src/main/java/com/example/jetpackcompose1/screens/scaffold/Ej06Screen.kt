@@ -1,7 +1,10 @@
 package com.example.jetpackcompose1.screens.scaffold
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.*
+import androidx.compose.material.BottomAppBar
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -25,7 +28,7 @@ fun Ej06Screen() {
             }
         }
     ){
-        /* scaffold pasa como parametro de la lambda content los valores de padding que genera
+        /* scaffold pasa como parámetro de la lambda content los valores de padding que genera
         con los elementos que añade alrededor de este contenido */
 
         BottomAppBar() {
@@ -33,7 +36,7 @@ fun Ej06Screen() {
             Text(text = "Screen2")
         }
         Text(text = "Hola mundo",
-            modifier = Modifier.padding(it) // TODO: no he visto diferencia al quitarlo
+            modifier = Modifier.padding(it) // TODO: ¿Cómo se usan los PaddingValues?
         )
 
     }
