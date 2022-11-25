@@ -34,8 +34,6 @@ fun Ej04Screen() {
         Box(Modifier
             .background(Color.LightGray)
             .fillMaxSize()) {
-            // TODO: Cuando se come todo y cuando deja otros elementos? (¿es porque Text tiene weight?)
-            // TODO: Ejemplo de fillmaxsize util (que no ocupe toda la pantalla ni en verticlal ni en horizontal
             Text(text = "Texto 4",
                 modifier = Modifier
                     .align(Alignment.TopEnd)

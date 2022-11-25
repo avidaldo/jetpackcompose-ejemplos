@@ -3,6 +3,8 @@ package com.example.jetpackcompose1.screens
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -15,7 +17,9 @@ import com.example.jetpackcompose1.navigation.Screens
 fun MainScreen(navController: NavController) {
 
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState()), // para que sea scrollable
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -33,6 +37,29 @@ fun MainScreen(navController: NavController) {
         }
         Button(onClick = { navController.navigate(route = Screens.Ejemplo05.route) }) {
             Text(text = "Ejemplo 5")
+        }
+        Button(onClick = { navController.navigate(route = Screens.ImagenesIconos.route) }) {
+            Text(text = "ImagenesIconos")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
+        }
+
+
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
+            Text(text = "Ejemplo 6")
         }
         Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
             Text(text = "Ejemplo 6")

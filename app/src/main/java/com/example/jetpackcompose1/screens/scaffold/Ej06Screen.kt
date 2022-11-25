@@ -21,11 +21,9 @@ fun Ej06Screen() {
                 title = { Text(text = stringResource(id = R.string.app_name)) })
         }
     ){
-        /* scaffold pasa como parametro de la lambda content los valores de padding que genera
+        /* scaffold pasa como parámetro de la lambda content los valores de padding que genera
         con los elementos que añade alrededor de este contenido */
-        Text(text = "Hola mundo",
-            modifier = Modifier.padding(it) // TODO: no he visto diferencia al quitarlo
-        )
+        Text(text = "Hola mundo", modifier = Modifier.padding(it))
 
     }
 
