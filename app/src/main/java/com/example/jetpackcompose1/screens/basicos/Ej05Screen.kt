@@ -31,7 +31,7 @@ fun Buscaminas() {
                         onClick = { /*TODO*/ },
                         Modifier
                             .weight(1f)
-                            .aspectRatio(1f)
+                            .aspectRatio(1f)  // (2)
                     ) {
                         Icon(
                             Icons.Default.Flag,
@@ -48,5 +48,14 @@ fun Buscaminas() {
 /*
  (1)
  Para poder hacer al mismo tiempo el arrangement de centrar la column pero separar con el spaceBy
+
+ (2)
+ aspectRatio fuerza la relación entre el ancho y el alto de un elemento. Si la relación es 1 (1f)
+ el alto y el ancho serán iguales, o sea: botones cuadrados (dejando de lado el borde redondeado).
+ En este caso. Adaptamos el número de botones que estipula el bucle a la pantalla al ponerles el
+ mismo peso, de ese modo el ancho del botón es función del tamaño de la pantalla y el número de
+ botones. Al forzar que sean cuadrados, ese ancho determina su alto, y por tanto el alto total del
+ cuadro en vertical.
+
 
  */
