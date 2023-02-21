@@ -45,7 +45,7 @@ fun MainScreen(navController: NavController) {
             Text(text = "Ejemplo 6")
         }
         Button(onClick = { navController.navigate(route = Screens.Ejemplo07.route) }) {
-            Text(text = "LazyColum")
+            Text(text = "Probando Modifier")
         }
 
 

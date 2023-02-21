@@ -28,15 +28,16 @@ fun Ej06Screen() {
             }
         }
     ){
-        /* scaffold pasa como parámetro de la lambda content los valores de padding que genera
-        con los elementos que añade alrededor de este contenido */
+        /* Scaffold pasa como parámetro de la lambda content los valores de padding que genera
+        con los elementos que añade alrededor de este contenido. Son ncesarios para que el contenido
+        no quede debajo de la BottomAppBar */
 
-        BottomAppBar() {
+        BottomAppBar() {// Probando este elemento dentro del contenido (no se utiliza así)
             Text(text = "Screen1")
             Text(text = "Screen2")
         }
         Text(text = "Hola mundo",
-            modifier = Modifier.padding(it) // TODO: ¿Cómo se usan los PaddingValues?
+            modifier = Modifier.padding(it)
         )
 
     }

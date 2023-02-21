@@ -10,7 +10,7 @@ import com.example.jetpackcompose1.screens.basicos.Buscaminas
 import com.example.jetpackcompose1.screens.basicos.Ej03Screen
 import com.example.jetpackcompose1.screens.basicos.Ej04Screen
 import com.example.jetpackcompose1.screens.basicos.ImagenesIconos
-import com.example.jetpackcompose1.screens.lazylists.Ej07Screen
+import com.example.jetpackcompose1.screens.basicos.Ej07Screen
 import com.example.jetpackcompose1.screens.scaffold.Ej06Screen
 import com.example.jetpackcompose1.screens.teoria.Ej01Screen
 import com.example.jetpackcompose1.screens.teoria.Ej02Screen
