@@ -1,11 +1,12 @@
 package com.example.jetpackcompose1.screens.scaffold
 
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.BottomAppBar
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.jetpackcompose1.R
@@ -27,18 +28,32 @@ fun Ej06Screen() {
                 Text(text = "Screen2")
             }
         }
-    ){
-        /* scaffold pasa como parámetro de la lambda content los valores de padding que genera
-        con los elementos que añade alrededor de este contenido */
-
-        BottomAppBar() {
+    ) {// (1)
+        BottomAppBar() { // (2)
             Text(text = "Screen1")
             Text(text = "Screen2")
         }
-        Text(text = "Hola mundo",
-            modifier = Modifier.padding(it) // TODO: ¿Cómo se usan los PaddingValues?
-        )
-
+        Column(
+            modifier = Modifier.fillMaxSize()//.padding(it) // (3)
+            ,
+            verticalArrangement = Arrangement.Bottom
+        ) {
+            Text(
+                text = "Hola mundo",
+            )
+        }
     }
-
 }
+
+/**
+ * (1) Scaffold pasa como parámetro de la lambda content los valores de padding que genera
+ * con los elementos que añade alrededor de este contenido (la BottomAppBar).
+ *
+ * (2) La BottomAppBar está pensada para pasarse como parámetro bottomBar, que ya tiene su
+ * lógica específica para colocarse en la parte de abajo de la pantalla. Si la usamos en el
+ * content no se posiciona allí. En general, no tendrá sentido usarla fuera de su parámetro
+ * específico.
+ *
+ * (3) Si no pasamos los paddingValues, el Text queda oculto bajo la bottomBar.
+ *
+ */
