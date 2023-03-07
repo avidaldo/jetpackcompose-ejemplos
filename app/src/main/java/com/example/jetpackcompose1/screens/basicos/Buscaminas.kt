@@ -10,8 +10,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-val spacedByDefault = 5.dp
-const val boardSize = 8
+val SPACE_BY_DEFAULT = 5.dp  // https://kotlinlang.org/docs/coding-conventions.html#property-names
+const val BOARD_SIZE = 8
 
 
 @Composable
@@ -19,14 +19,14 @@ fun Buscaminas() {
     Column(
         Modifier.fillMaxSize().padding(10.dp),
         verticalArrangement = Arrangement.spacedBy( // (1)
-            space = spacedByDefault,
+            space = SPACE_BY_DEFAULT,
             alignment = Alignment.CenterVertically
         ),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        repeat(boardSize) {
-            Row(horizontalArrangement = Arrangement.spacedBy(spacedByDefault)) {
-                repeat(boardSize) {
+        repeat(BOARD_SIZE) {
+            Row(horizontalArrangement = Arrangement.spacedBy(SPACE_BY_DEFAULT)) {
+                repeat(BOARD_SIZE) {
                     Button(
                         onClick = { /*TODO*/ },
                         Modifier
