@@ -34,7 +34,7 @@ fun Ej06Screen() {
             Text(text = "Screen2")
         }
         Column(
-            modifier = Modifier.fillMaxSize()//.padding(it) // (3)
+            modifier = Modifier.fillMaxSize().//padding(it) // (3)
             ,
             verticalArrangement = Arrangement.Bottom
         ) {
@@ -55,5 +55,7 @@ fun Ej06Screen() {
  * específico.
  *
  * (3) Si no pasamos los paddingValues, el Text queda oculto bajo la bottomBar.
+ * El mensaje de error en este caso permite igualmente compilar y ejecutar, y veremos cómo
+ * si no los pasamos, el textView queda oculto por la bottomBar
  *
  */
