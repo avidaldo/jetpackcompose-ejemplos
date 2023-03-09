@@ -34,7 +34,7 @@ fun Ej06Screen() {
             Text(text = "Screen2")
         }
         Column(
-            modifier = Modifier.fillMaxSize().//padding(it) // (3)
+            modifier = Modifier.fillMaxSize()//.padding(it) // (3)
             ,
             verticalArrangement = Arrangement.Bottom
         ) {

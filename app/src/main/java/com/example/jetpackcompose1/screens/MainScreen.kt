@@ -42,10 +42,13 @@ fun MainScreen(navController: NavController) {
             Text(text = "ImagenesIconos")
         }
         Button(onClick = { navController.navigate(route = Screens.Ejemplo06.route) }) {
-            Text(text = "Ejemplo 6")
+            Text(text = "Scaffold")
         }
         Button(onClick = { navController.navigate(route = Screens.Ejemplo07.route) }) {
             Text(text = "Probando Modifier")
+        }
+        Button(onClick = { navController.navigate(route = Screens.Ejemplo08.route) }) {
+            Text(text = "Long Click y Doble click")
         }
 
 
